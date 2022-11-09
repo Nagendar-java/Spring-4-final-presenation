@@ -1,0 +1,48 @@
+@charset "UTF-8";
+    h2 { color: blue; }
+        p { color: red; }
+        #login_form{ align-items: center; color: rgb(105, 23, 199);text-align: center;}
+
+Body {
+    font-family: Calibri, Helvetica, sans-serif;
+    background-color: rgb(252, 252, 252);
+  }
+  button { 
+         background-color: #4CAF50; 
+         width: 100%;
+          color: rgb(15, 15, 13); 
+          padding: 15px; 
+          margin: 10px 0px; 
+          border: none; 
+          cursor: pointer; 
+           } 
+   form { 
+          border: 3px  #f1f1f1; 
+          padding-left: 350px;
+          
+      } 
+   input[type=text], input[type=password],input[type=email] { 
+          width: 100%; 
+          margin: 8px 0;
+          padding: 12px 20px; 
+          display: inline-block; 
+          border: 2px solid green; 
+          box-sizing: border-box; 
+      }
+   button:hover { 
+          opacity: 0.7; 
+      } 
+    .cancelbtn { 
+          width: auto; 
+          padding: 10px 18px;
+          margin: 10px 5px;
+      } 
+        
+     
+   .container { 
+        padding:  20px ; 
+          background-color: lightblue;
+          width: 50%;
+          
+          
+      } 
