@@ -1,0 +1,66 @@
+<mat-toolbar color="primary">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>Digital Book Details</span>
+    <span class="example-spacer"></span>
+  
+    <button mat-raised-button color="warn" (click)="homPage()">Home</button>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>account_circle</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon>share</mat-icon>
+    </button>
+  </mat-toolbar>
+  
+  <div mat-dialog-content><br>
+    <h2 style="text-align: center;"> Viewing a Book</h2>
+    <form [formGroup]="bookF">
+      <mat-form-field appearance="outline">
+        <mat-label>Book Id</mat-label>
+        <input matInput placeholder="" formControlName="bookId">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Title</mat-label>
+        <input matInput placeholder="Enter title here" formControlName="bookTitle">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Book AuthorId</mat-label>
+        <input matInput formControlName="bookAuthorId">
+      </mat-form-field>
+  
+      <mat-form-field appearance="outline">
+        <mat-label>Category</mat-label>
+        <input matInput formControlName="bookCategory">
+  
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Publisher</mat-label>
+        <input matInput placeholder="Enter Publisher here" formControlName="bookPublisher">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Price</mat-label>
+        <input matInput placeholder="Enter Price here" formControlName="bookPrice">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Content</mat-label>
+        <input matInput placeholder="Enter Content here" formControlName="bookContent">
+      </mat-form-field>
+      <section class="example-section">
+        <mat-checkbox class="example-margin" formControlName="bookStatus">Active</mat-checkbox>
+      </section>
+      <mat-form-field appearance="outline">
+        <mat-label>bookReleaseDate</mat-label>
+        <input matInput formControlName="bookReleaseDate">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>bookSubscribeId</mat-label>
+        <input matInput formControlName="bookSubscribeId">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>bookSubscribe</mat-label>
+        <input matInput formControlName="bookSubscribe">
+      </mat-form-field>
+    </form>
+  </div>

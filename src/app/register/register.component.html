@@ -1,0 +1,86 @@
+<head>  
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <title> Student Login Page </title>  
+    <style>   
+    Body {  
+      font-family: Calibri, Helvetica, sans-serif;  
+      background-color: pink;  
+    }  
+    button {   
+           background-color: #4CAF50;   
+           width: 100%;  
+            color: orange;   
+            padding: 15px;   
+            margin: 10px 0px;   
+            border: none;   
+            cursor: pointer;   
+             }   
+     form {   
+            border: 3px solid #f1f1f1;   
+        }   
+     input[type=text], input[type=password] {   
+            width: 100%;   
+            margin: 8px 0;  
+            padding: 12px 20px;   
+            display: inline-block;   
+            border: 2px solid green;   
+            box-sizing: border-box;   
+        }  
+     button:hover {   
+            opacity: 0.7;   
+        }   
+      .cancelbtn {   
+            width: auto;   
+            padding: 10px 18px;  
+            margin: 10px 5px;  
+        }   
+            
+         
+     .container {   
+            padding: 25px;   
+            background-color: lightblue;  
+        }   
+    </style>   
+    </head>    
+
+
+
+
+
+
+
+
+<div class="container col-mg-7">
+    <h1 STYLE="COLOR:RED;">User Registration</h1>
+    <form (ngSubmit)="addUser()">
+  
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">userName</label>
+            <input type="text" [(ngModel)]="user.userName" class="form-control" id="userName" name="userName">
+            </div>
+   
+    
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">email</label>
+            <input type="text" [(ngModel)]="user.userEmailId" class="form-control" id="userEmailId" name="userEmailId">
+            </div>
+
+          
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">password</label>
+                <input type="password" [(ngModel)]="user.password" class="form-control" id="password" name="password">
+                </div>
+    
+                <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Role</label>
+                <select  required [(ngModel)]="user.role" name="role" [ngModelOptions]="{standalone: true}">
+                    <option value="READER">READER</option>
+                    <option value="AUTHOR">AUTHOR</option>
+                    </select>
+      </div>
+           
+    
+            <button type="submit" class="btn btn-primary">Register</button>
+    </form>
+    
+    </div>
